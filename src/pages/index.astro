@@ -1,16 +1,12 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Base from "../layouts/Base.astro";
+import Welcome from "../components/general/Welcome.astro";
+import LatestPosts from "../components/blog/LatestPosts.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-  <main>
-    <h1 class="text-3xl text-primary-400">Hello World</h1>
-    <p class="text-secondary-500">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim illo, quos
-      quas reprehenderit quia odio inventore alias distinctio in aperiam. Sunt
-      nam, minima quidem nesciunt neque aspernatur repellendus deleniti
-      consectetur.
-    </p>
-    <button class="btn">Click Me</button>
-  </main>
-</Layout>
+<Base>
+	<main>
+		<Welcome />
+		<LatestPosts />
+	</main>
+</Base>
