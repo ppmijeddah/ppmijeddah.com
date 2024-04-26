@@ -24,7 +24,9 @@ import slide5 from "../../assets/slide-5.jpg";
   <p>Kami berada di naungan PPI Dunia</p>
 </section>
 
-<section class="my-10 flex justify-center gap-5 overflow-hidden py-4 sm:gap-10">
+<section
+  class="c-no-scrollbar flex items-center gap-5 overflow-auto pt-4 pb-20 sm:gap-10"
+>
   <div
     class="relative w-44 flex-none overflow-hidden bg-white dark:bg-pacamara-dark sm:w-3/12 rotate-2 rounded-[15px]"
   >
@@ -76,3 +78,13 @@ import slide5 from "../../assets/slide-5.jpg";
     />
   </div>
 </section>
+
+<style>
+  .c-no-scrollbar {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+  }
+  .c-no-scrollbar::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+</style>

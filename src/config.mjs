@@ -3,7 +3,7 @@ export default {
   titleSuffix: " | PPMI Jeddah ☕",
   description:
     "PPMI Jeddah adalah organisasi Mahasiswa Indonesia di Jeddah, Saudi Arabia. Universitas di Jeddah yang berafiliasi dengan kami adalah KAU dan KAUST. Kami berada di naungan PPI Dunia",
-  defaultOgImage: "./defaultog.jpg",
+  defaultOgImage: "/defaultog.jpg",
   latestPosts: 3,
   postsPerPage: 3,
   url: "https://ppmijeddah.com",
