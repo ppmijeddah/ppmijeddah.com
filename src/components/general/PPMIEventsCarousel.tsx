@@ -35,6 +35,7 @@ const ImageCarousel = () => {
             width={800}
             alt=""
             className="object-cover image-shine h-[200px] md:h-[500px]"
+            loading="lazy"
           />
         </div>
       </SplideSlide>
@@ -45,6 +46,7 @@ const ImageCarousel = () => {
             width={800}
             alt=""
             className="object-cover image-shine h-[200px] md:h-[500px]"
+            loading="lazy"
           />
         </div>
       </SplideSlide>
@@ -55,6 +57,7 @@ const ImageCarousel = () => {
             width={800}
             alt=""
             className="object-cover image-shine h-[200px] md:h-[500px]"
+            loading="lazy"
           />
         </div>
       </SplideSlide>
@@ -65,6 +68,7 @@ const ImageCarousel = () => {
             width={800}
             alt=""
             className="object-cover image-shine h-[200px] md:h-[500px]"
+            loading="lazy"
           />
         </div>
       </SplideSlide>
@@ -75,6 +79,7 @@ const ImageCarousel = () => {
             width={800}
             alt=""
             className="object-cover image-shine h-[200px] md:h-[500px]"
+            loading="lazy"
           />
         </div>
       </SplideSlide>
