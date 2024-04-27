@@ -30,57 +30,77 @@ const ImageCarousel = () => {
     >
       <SplideSlide>
         <div className="relative overflow-hidden bg-white dark:bg-pacamara-dark rotate-2 rounded-[15px]">
-          <img
-            src="/slide-1.jpg"
-            width={800}
-            alt=""
-            className="object-cover image-shine h-[200px] md:h-[500px]"
-            loading="lazy"
-          />
+          <picture>
+            <source type="image/webp" srcSet="slide-1.webp" />
+            <source type="image/jpeg" srcSet="slide-1.jpg" />
+            <img
+              src="/slide-1.jpg"
+              width={800}
+              alt=""
+              className="object-cover image-shine h-[200px] md:h-[500px]"
+              loading="lazy"
+            />
+          </picture>
         </div>
       </SplideSlide>
       <SplideSlide>
         <div className="relative overflow-hidden bg-white dark:bg-pacamara-dark rotate-2 rounded-[15px]">
-          <img
-            src="/slide-2.jpg"
-            width={800}
-            alt=""
-            className="object-cover image-shine h-[200px] md:h-[500px]"
-            loading="lazy"
-          />
+          <picture>
+            <source type="image/webp" srcSet="/slide-2.webp" />
+            <source type="image/jpeg" srcSet="/slide-2.jpg" />
+            <img
+              src="/slide-2.jpg"
+              width={800}
+              alt=""
+              className="object-cover image-shine h-[200px] md:h-[500px]"
+              loading="lazy"
+            />
+          </picture>
         </div>
       </SplideSlide>
       <SplideSlide>
         <div className="relative overflow-hidden bg-white dark:bg-pacamara-dark rotate-2 rounded-[15px]">
-          <img
-            src="/slide-3.jpg"
-            width={800}
-            alt=""
-            className="object-cover image-shine h-[200px] md:h-[500px]"
-            loading="lazy"
-          />
+          <picture>
+            <source type="image/webp" srcSet="/slide-3.webp" />
+            <source type="image/jpeg" srcSet="/slide-3.jpg" />
+            <img
+              src="/slide-3.jpg"
+              width={800}
+              alt=""
+              className="object-cover image-shine h-[200px] md:h-[500px]"
+              loading="lazy"
+            />
+          </picture>
         </div>
       </SplideSlide>
       <SplideSlide>
         <div className="relative overflow-hidden bg-white dark:bg-pacamara-dark rotate-2 rounded-[15px]">
-          <img
-            src="/slide-4.jpg"
-            width={800}
-            alt=""
-            className="object-cover image-shine h-[200px] md:h-[500px]"
-            loading="lazy"
-          />
+          <picture>
+            <source type="image/webp" srcSet="/slide-4.webp" />
+            <source type="image/jpeg" srcSet="/slide-4.jpg" />
+            <img
+              src="/slide-4.jpg"
+              width={800}
+              alt=""
+              className="object-cover image-shine h-[200px] md:h-[500px]"
+              loading="lazy"
+            />
+          </picture>
         </div>
       </SplideSlide>
       <SplideSlide>
         <div className="relative overflow-hidden bg-white dark:bg-pacamara-dark rotate-2 rounded-[15px]">
-          <img
-            src="/slide-5.jpg"
-            width={800}
-            alt=""
-            className="object-cover image-shine h-[200px] md:h-[500px]"
-            loading="lazy"
-          />
+          <picture>
+            <source type="image/webp" srcSet="/slide-5.webp" />
+            <source type="image/jpeg" srcSet="/slide-5.jpg" />
+            <img
+              src="/slide-5.jpg"
+              width={800}
+              alt=""
+              className="object-cover image-shine h-[200px] md:h-[500px]"
+              loading="lazy"
+            />
+          </picture>
         </div>
       </SplideSlide>
     </Splide>
