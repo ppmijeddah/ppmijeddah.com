@@ -1,0 +1,10 @@
+diff --git a/package.json b/package.json
+index 2ee7925e65d86be40d026d2d73c752aeddbe0bb5..12af1b039f06d2dddd31b19f8cd333d61cbecb4a 100644
+--- a/package.json
++++ b/package.json
+@@ -1,4 +1,5 @@
+ {
++  "type": "module",
+   "name": "@splidejs/react-splide",
+   "version": "0.7.12",
+   "description": "The React component for Splide.",
