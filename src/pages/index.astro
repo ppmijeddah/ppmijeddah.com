@@ -2,11 +2,13 @@
 import Base from "../layouts/Base.astro";
 import Welcome from "../components/general/Welcome.astro";
 import PPMIEvents from "../components/general/PPMIEventsCarousel";
+import FAQ from "../components/general/FAQ.astro";
 ---
 
 <Base>
-  <main class="flex flex-col gap-16 lg:gap-24 pb-28">
+  <main class="flex flex-col gap-16 lg:gap-24 pt-14 py-28">
     <Welcome />
     <PPMIEvents client:load />
+    <FAQ />
   </main>
 </Base>
