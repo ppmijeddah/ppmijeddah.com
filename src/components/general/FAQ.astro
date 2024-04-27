@@ -140,23 +140,20 @@ alamat dan kontak, data media sosial.`,
 ];
 ---
 
-<section class="px-7">
-  <TextsContainer>
-    <h2>FAQ - Pertanyaan Yang Sering Ditanya</h2>
-
-    <ul class="list-none !ps-0">
-      {
-        questionsAndAnswers.map((v) => {
-          return (
-            <li>
-              <details>
-                <summary class="cursor-pointer">{v.question}</summary>
-                <span>{v.answer}</span>
-              </details>
-            </li>
-          );
-        })
-      }
-    </ul>
-  </TextsContainer>
-</section>
+<TextsContainer>
+  <slot />
+  <ul class="list-none !ps-0">
+    {
+      questionsAndAnswers.map((v) => {
+        return (
+          <li>
+            <details>
+              <summary class="cursor-pointer">{v.question}</summary>
+              <span>{v.answer}</span>
+            </details>
+          </li>
+        );
+      })
+    }
+  </ul>
+</TextsContainer>

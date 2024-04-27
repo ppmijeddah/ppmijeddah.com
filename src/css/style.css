@@ -3,6 +3,10 @@
   --gradient-height: 2px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-display: swap;
   font-family: "Inter";
