@@ -23,6 +23,7 @@ const ImageCarousel = () => {
 
   return (
     <Splide
+      className="hover:cursor-grab active:cursor-grabbing"
       aria-label="My Favorite Images"
       options={options}
       extensions={{ AutoScroll }}
