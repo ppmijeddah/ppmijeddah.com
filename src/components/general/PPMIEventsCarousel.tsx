@@ -17,6 +17,9 @@ const ImageCarousel = () => {
         gap: "3rem",
       },
     },
+    autoScroll: {
+      speed: 0.5,
+    },
     arrows: false,
     pagination: false,
   };
