@@ -1,0 +1,16 @@
+---
+import Base from "../layouts/Base.astro";
+import TextsContainer from "../components/general/TextsContainer.astro";
+import FAQList from "../components/general/FAQList";
+---
+
+<Base>
+  <main class="flex flex-col gap-2 pt-14 py-28">
+    <section class="px-7">
+      <TextsContainer>
+        <h1>FAQ - Pertanyaan Yang Sering Ditanya</h1>
+        <FAQList client:load />
+      </TextsContainer>
+    </section>
+  </main>
+</Base>
