@@ -7,5 +7,5 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), mdx(), react()],
-  site: "https://pacamara-astro-6y7xr.kinsta.page"
+  site: "https://ppmijeddah-com.vercel.app"
 });
