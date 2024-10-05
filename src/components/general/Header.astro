@@ -2,10 +2,11 @@
 import ModeSwitch from "./ModeSwitch.astro";
 import HamburgerButton from "./HamburgerButton.astro";
 import Navigation from "./Navigation.astro";
+import Logo from "./Logo.astro";
 ---
 
 <div
-  class="navigation flex-1 hidden absolute top-0 left-0 w-full bg-pacamara-white dark:bg-pacamara-dark transition-all duration-300 p-7 pt-[112px] z-10 shadow-2xl"
+  class="navigation flex-1 ease-in-out absolute top-0 w-full bg-pacamara-white dark:bg-pacamara-dark transition-all duration-300 p-7 h-dvh h-screen hidden pt-40 z-10 shadow-2xl"
   id="navigation_wrapper"
 >
   <Navigation />
@@ -16,11 +17,12 @@ import Navigation from "./Navigation.astro";
   <div class="logo flex-none">
     <a
       href="/"
-      class="font-bold font-pacamara-space text-lg hover:text-pacamara-accent transition-all duration-300 dark:text-white dark:hover:text-pacamara-accent"
-      >PPMI Jeddah</a
+      class="flex items-center font-bold font-pacamara-space text-lg hover:text-pacamara-accent transition-all duration-300 dark:text-white dark:hover:text-pacamara-accent"
     >
+      <Logo />
+    </a>
   </div>
-  <div class="navigation flex-1 hidden md:block">
+  <div class="navigation flex-1 hidden md:flex justify-end">
     <Navigation />
   </div>
 

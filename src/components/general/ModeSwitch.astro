@@ -26,18 +26,22 @@
 <script>
   const setDarkModeButton = () => {
     const button = document.querySelector("#mode_switcher");
-    button.addEventListener('click', function(){
-      document.documentElement.classList.toggle('dark');
+    if (!button) {
+      return;
+    }
 
-      if ( document.documentElement.classList.contains('dark') ) {
-        localStorage.darkMode = 'true'
+    button.addEventListener("click", function () {
+      document.documentElement.classList.toggle("dark");
+
+      if (document.documentElement.classList.contains("dark")) {
+        localStorage.darkMode = "true";
       } else {
-        localStorage.darkMode = 'false'
+        localStorage.darkMode = "false";
       }
     });
-  }
+  };
 
   setDarkModeButton();
   // Runs on view transitions navigation
-  document.addEventListener('astro:after-swap', setDarkModeButton);
+  document.addEventListener("astro:after-swap", setDarkModeButton);
 </script>
