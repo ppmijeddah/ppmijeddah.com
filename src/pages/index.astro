@@ -4,6 +4,7 @@ import Welcome from "../components/general/Welcome.astro";
 import PPMIEvents from "../components/general/PPMIEventsCarousel";
 import FAQList from "../components/general/FAQList";
 import TextsContainer from "../components/general/TextsContainer.astro";
+import ContactForm from "../components/general/ContactForm.astro";
 ---
 
 <Base>
@@ -14,6 +15,12 @@ import TextsContainer from "../components/general/TextsContainer.astro";
       <TextsContainer>
         <h2 id="faq">FAQ - Pertanyaan Yang Sering Ditanya</h2>
         <FAQList client:idle />
+      </TextsContainer>
+    </section>
+    <section class="px-7">
+      <TextsContainer>
+        <h2 id="contact-us">Hubungi kami</h2>
+        <ContactForm />
       </TextsContainer>
     </section>
   </main>

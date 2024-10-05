@@ -16,5 +16,6 @@ export default {
     pinterest: false,
     skype: false,
     twitter: false,
+    whatsapp: "6285156562419",
   },
 };

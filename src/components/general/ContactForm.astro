@@ -1,0 +1,59 @@
+<div class="space-y-6">
+  <p>
+    Masih ada pertanyaan ? Kami dengan senang hati menjawab pertanyaan anda.
+    Hubungi kami disini
+  </p>
+  <form class="space-y-4" id="contact-form">
+    <div class="space-y-1">
+      <label for="name"> Nama</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        class="border rounded w-full px-3 py-1 text-md outline-pacamara-accent dark:bg-gray-600"
+      />
+    </div>
+
+    <div class="space-y-1">
+      <label for="message"> Pesan</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="4"
+        class="border rounded w-full px-3 py-1 text-md outline-pacamara-accent dark:bg-gray-600"
+      ></textarea>
+    </div>
+
+    <button
+      type="submit"
+      class="inline-block mt-10 font-bold font-pacamara-space text-lg hover:text-pacamara-accent transition-all duration-300 dark:text-white dark:hover:text-pacamara-accent underline"
+    >
+      Hubungi via WA</button
+    >
+  </form>
+</div>
+
+<script>
+  import config from "../../config.mjs";
+
+  const contactForm = document.getElementById(
+    "contact-form"
+  ) as HTMLFormElement;
+
+  contactForm?.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.target as HTMLFormElement);
+    const whatsappMessage = `Halo nama saya ${formData.get(
+      "name"
+    )}. Pesan saya: ${formData.get("message")}`;
+
+    const whatsappNumber = config.social.whatsapp;
+
+    window.open(
+      `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+        whatsappMessage
+      )}`
+    );
+  });
+</script>

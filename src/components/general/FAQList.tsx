@@ -183,7 +183,7 @@ const FAQList = () => {
               type="text"
               id="search"
               name="search"
-              className="border w-full px-3 py-1 text-md outline-pacamara-accent"
+              className="border rounded w-full px-3 py-1 text-md outline-pacamara-accent dark:bg-gray-600"
               onChange={(e) => setSearchVal(e.target.value)}
             />
             <button type="submit">
