@@ -2,7 +2,7 @@ import rss from "@astrojs/rss";
 import config from "../config.mjs";
 import { getCollection } from "astro:content";
 
-export async function get(context) {
+export async function get(_) {
   const blog = await getCollection("blog");
   return rss({
     title: config.title + config.titleSuffix,
@@ -14,6 +14,5 @@ export async function get(context) {
       description: post.data.intro,
       link: `/blog/${post.slug}/`,
     })),
-    customData: `<language>en-us</language>`,
   });
 }
