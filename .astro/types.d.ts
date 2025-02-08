@@ -193,15 +193,6 @@ declare module 'astro:content' {
   data: InferEntrySchema<"blog">
 } & { render(): Render[".mdx"] };
 };
-"page": {
-"about-me.mdx": {
-	id: "about-me.mdx";
-  slug: "about-me";
-  body: string;
-  collection: "page";
-  data: InferEntrySchema<"page">
-} & { render(): Render[".mdx"] };
-};
 
 	};
 

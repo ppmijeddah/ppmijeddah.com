@@ -81,11 +81,6 @@
       "title": "blog",
       "path": "[[workspace]]/src/content/blog",
       "contentTypes": ["default"]
-    },
-    {
-      "title": "page",
-      "path": "[[workspace]]/src/content/page",
-      "contentTypes": ["page"]
     }
   ]
 }
