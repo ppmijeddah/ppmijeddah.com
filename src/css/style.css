@@ -5,9 +5,11 @@
 
 html {
   scroll-behavior: smooth;
-  scrollbar-gutter: stable;
   overflow-y: scroll;
   overflow-x: hidden;
+  scrollbar-color: theme("colors.pacamara-secondary") transparent;
+  scrollbar-width: auto;
+  scrollbar-gutter: stable;
 }
 
 @font-face {
@@ -17,7 +19,6 @@ html {
   font-weight: 400;
   src: url("/fonts/inter-v12-latin_latin-ext-regular.woff2") format("woff2");
 }
-
 @font-face {
   font-display: swap;
   font-family: "Inter";
@@ -33,7 +34,6 @@ html {
   src: url("/fonts/space-grotesk-v15-latin_latin-ext-regular.woff2")
     format("woff2");
 }
-
 @font-face {
   font-display: swap;
   font-family: "Space Grotesk";
@@ -41,7 +41,6 @@ html {
   font-weight: 600;
   src: url("/fonts/space-grotesk-v15-latin_latin-ext-600.woff2") format("woff2");
 }
-
 @font-face {
   font-display: swap;
   font-family: "Space Grotesk";
@@ -125,27 +124,4 @@ html {
 
 .image-shine:hover {
   -webkit-mask-position: 0 0;
-}
-
-html {
-  scrollbar-color: theme("colors.pacamara-secondary") transparent;
-  scrollbar-width: auto;
-}
-
-body::-webkit-scrollbar {
-  width: 14px;
-}
-
-body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-body::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(
-    180deg,
-    theme("colors.pacamara-secondary"),
-    theme("colors.pacamara-accent")
-  );
-  outline: 0px solid theme("colors.pacamara-accent");
-  border-radius: 10px;
 }
