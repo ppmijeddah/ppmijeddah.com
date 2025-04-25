@@ -5,10 +5,24 @@ const { postData } = Astro.props;
 
 const title = ( postData?.data?.title ? postData.data.title : config.title ) + config.titleSuffix;
 const description = postData?.data?.description ? postData.data.description : config.description;
-const permalink = new URL(Astro.url.pathname, Astro.url);
-const image = postData?.data?.image ? postData.data.image.src : config.defaultOgImage;
-const type = postData?.data?.type ? postData.data.type : "website";
+const permalink = new URL(Astro.url.pathname, Astro.site || Astro.url);
 
+let imageUrl;
+if (postData?.data?.image) {
+  // For imported images
+  if (typeof postData.data.image === 'object' && postData.data.image.src) {
+    // Get the built filename from the imported image
+    imageUrl = new URL(postData.data.image.src, Astro.site || Astro.url).toString();
+  } else {
+    // For string paths
+    imageUrl = new URL(postData.data.image, Astro.site || Astro.url).toString();
+  }
+} else {
+  // Default image
+  imageUrl = new URL(config.defaultOgImage, Astro.site || Astro.url).toString();
+}
+
+const type = postData?.data?.type ? postData.data.type : "website";
 ---
 
 <title>{title}</title>
@@ -20,11 +34,11 @@ const type = postData?.data?.type ? postData.data.type : "website";
 <meta property="og:title" content={title} />
 {permalink && <meta property="og:url" content={permalink} />}
 {description && <meta property="og:description" content={description} />}
-{image && <meta property="og:image" content={new URL(image, Astro.url)} />}
+<meta property="og:image" content={imageUrl} />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:title" content={title} />
 {permalink && <meta property="twitter:url" content={permalink} />}
 {description && <meta property="twitter:description" content={description} />}
-{image && <meta property="twitter:image" content={image} />}
+<meta property="twitter:image" content={imageUrl} />
