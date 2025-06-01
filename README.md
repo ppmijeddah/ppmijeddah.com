@@ -1,46 +1,60 @@
-# ☕ Pacamara - a blog theme for Astro
+# PPMI Jeddah Website
 
-**Pacamara** is a simple blog theme for **Astro** that uses `md` and `mdx` files to store your content.
+## Description
 
-You can see it live in action [**here**](https://pacamara-astro-6y7xr.kinsta.page/).
+PPMI Jeddah is the official website for the Indonesian Student Association in Jeddah, Saudi Arabia. It serves as an informational hub for students, providing details about the organization, affiliated universities (KAU and KAUST), and activities. The website is under the auspices of PPI Dunia.
 
-![Pacamara demo screen](https://github.com/palmiak/pacamara-astro/assets/2342458/9fbe8655-ee60-4c37-8bf3-eae0cca57d91)
+## Deployment URL
 
-## Features
+The live website can be accessed at: [https://ppmijeddah.com](https://ppmijeddah.com)
 
-- Dark & Light mode support
-- SEO-friendly
-- Type-safe markdown
-- Support Astro's Assets and Collections
-- Provides RSS feed
-- Astro 3.0 Compatible
-- View Transition API compatible
+## Getting Started
 
-## Installation
+To get a local copy up and running, follow these simple steps:
 
-If you are reading this on GitHub, you can click on the "Use this template" button above to create a new repository on your account. Then you can do a git clone to clone it to your local system.
+1.  **Clone the repository:**
+    ```sh
+    git clone <repository-url>
+    ```
+2.  **Navigate to the project directory:**
+    ```sh
+    cd ppmijeddah.com
+    ```
+3.  **Install dependencies:**
+    ```sh
+    pnpm install
+    ```
+4.  **Run the development server:**
+    ```sh
+    pnpm run dev
+    ```
+    This will start the development server, typically at `http://localhost:4321`.
 
-Than run:
+5.  **Build for production:**
+    ```sh
+    pnpm run build
+    ```
+    This will create a production-ready build in the `dist/` directory.
 
+## Tech Stack
+
+This website is built with a modern tech stack, focusing on performance and developer experience:
+
+*   **Framework:** [Astro](https://astro.build/) - A web framework for building fast, content-focused websites.
+*   **UI Components:**
+    *   [React](https://react.dev/) (via `@astrojs/react`) for interactive components.
+    *   Astro components (`.astro`) for templating and server-side rendering.
+*   **Styling:** [Tailwind CSS](https://tailwindcss.com/) (via `@astrojs/tailwind`) - A utility-first CSS framework.
+*   **Content Management:** [Astro Content Collections](https://docs.astro.build/en/guides/content-collections/) for managing blog posts and author data (MDX and JSON).
+*   **Image Optimization:** `astro:assets` and `sharp` for optimizing images.
+*   **Carousel:** [@splidejs/react-splide](https://splidejs.com/) for image carousels.
+*   **Date Formatting:** `dateformat` for consistent date presentation.
+*   **Icons:** `astro-icon` for easy SVG icon integration.
+*   **RSS Feed:** `@astrojs/rss` for generating an RSS feed for the blog.
+*   **Linting/Formatting:**
+    *   [Prettier](https://prettier.io/) for code formatting.
+    *   `prettier-plugin-astro` for Astro-specific formatting.
+*   **Package Manager:** [pnpm](https://pnpm.io/)
+
+The `ppmijeddah.com/package.json` file contains the full list of dependencies.
 ```
-npm install
-npm start
-```
-
-## Usage
-
-- **Pacamara** utilizes Astro Collections for blog posts, pages, and authors. You can find all of them in `src/content` folder
-- Most of the configuration is customizable via `src/config.mjs`.
-- The theme uses **TailwindCSS** - this means you can configure the colors using `tailwind.config.cjs`.
-
-## Kinsta Hosting
-
-If you are looking for a great place to host your blog, try [**Kinsta Static Site Hosting**](https://kinsta.com/static-site-hosting).
-
-## Thank you
-
-Without my [wife](https://agnieszkapalmowska.myportfolio.com/), this project wouldn't like half as beautiful as it looks. Also, if you are looking for an amazing designer - click the link above.
-
-## Did you enjoy this theme?
-
-If you don't want to miss any of the content I create, join my [weekly newsletter](https://newsletter.maciekpalmowski.dev/).
