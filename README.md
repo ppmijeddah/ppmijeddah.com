@@ -2,7 +2,7 @@
 
 ## Description
 
-PPMI Jeddah is the official website for the Indonesian Student Association in Jeddah, Saudi Arabia. It serves as an informational hub for students, providing details about the organization, affiliated universities (KAU and KAUST), and activities. The website is under the auspices of PPI Dunia.
+PPMI Jeddah is the official website for the Indonesian Student Association in Jeddah, Saudi Arabia. It serves as an informational hub for students, providing details about the organization, affiliated universities KAU, and activities. The website is under the auspices of PPI Dunia.
 
 ## Deployment URL
 
