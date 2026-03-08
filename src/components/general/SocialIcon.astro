@@ -1,12 +1,29 @@
 ---
-import { Icon } from 'astro-icon'
+import Dribbble from "../icons/dribbble.astro";
+import Facebook from "../icons/facebook.astro";
+import Instagram from "../icons/instagram.astro";
+import Mastodon from "../icons/mastodon.astro";
+import Pinterest from "../icons/pinterest.astro";
+import Skype from "../icons/skype.astro";
+import Twitter from "../icons/twitter.astro";
 
-const { socialUrl=false, socialType } = Astro.props;
+const icons: Record<string, any> = {
+  dribbble: Dribbble,
+  facebook: Facebook,
+  instagram: Instagram,
+  mastodon: Mastodon,
+  pinterest: Pinterest,
+  skype: Skype,
+  twitter: Twitter,
+};
+
+const { socialUrl = false, socialType } = Astro.props;
+const IconComponent = icons[socialType];
 ---
-{socialUrl &&
+{socialUrl && IconComponent &&
 <li>
-    <a href={socialUrl} target="_blank" aria-label={socialType + "link"}>
-        <Icon name={socialType} class="w-auto h-[15px] transition-all duration-300 fill-pacamara-primary/60 hover:fill-pacamara-secondary dark:fill-pacamara-accent dark:hover:fill-pacamara-secondary" />
+    <a href={socialUrl} target="_blank" aria-label={socialType + " link"}>
+        <IconComponent />
     </a>
 </li>
 }
